@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --color-theme-red: #FF7373;
+    --color-theme-dark: #23262A;
+    --color-white: #FFFFFF;
+    --color-grey-09: #707070;
+    --color-grey-10: #616365;
+    --color-grey-20: #E6E6E6;
+
+    --font-poppins: 'Poppins', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-size-13: 0.813rem;
+    --font-size-14: 0.875rem;
+    --font-size-16: 1rem;
+    --font-size-18: 1.125;
+    --font-size-20: 1.25rem;
+    --font-size-45: 2.813rem;
+    --font-size-65: 4.063rem;
+}
+
+
+/* General */
+html, body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-theme-dark);
+}
+/* General end */
+
+.menu-bar {
+    background-color: var(--color-grey-20);
+}
+    .menu-bar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+.menu-bar .page-menu a {
+    color: var(--color-theme-dark);
+    text-decoration: none;
+    font-size: var(--font-size-16);
+}
+
+.menu-bar .menu-icon-button button{
+    background-color: var(--color-white);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+}
+.menu-bar .menu-icon-button button a {
+    color: var(--color-theme-dark);
+}
