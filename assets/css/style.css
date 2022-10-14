@@ -144,7 +144,8 @@ header {
             position: relative;
         }
             .navbar-menu .icon-links a:hover {
-                color: var(--color-theme);
+                color: var(--color-white);
+                background-color: var(--color-dark);
                 text-decoration: none;
             }
 
@@ -179,9 +180,6 @@ header {
 
 
 /*------------------------------------------------------*/
-.featured-products{
-
-}
     .featured-products .container{
         max-width: 1110px;
     }
@@ -215,16 +213,12 @@ header {
                 font-size: var(--font-size-18);
                 font-weight: var(--font-weight-semibold);
             }
-    .card:hover {
-        
-    }
-
 
     .card .card-menu {
         position: absolute;
         top: 10px;
         right: 10px;
-        display: block;
+        display: none;
     }
         .card .card-menu a {
             background-color: var(--color-white);
@@ -240,22 +234,26 @@ header {
             position: relative;
         }
             .card .card-menu a:hover {
-                color: var(--color-theme);
+                color: var(--color-white);
+                background-color: var(--color-dark);
                 text-decoration: none;
             }
-
+    .card:hover .card-menu {
+        display: block;
+    }
 
 .card .fixxo-btn-card-theme {
     position: absolute;
     bottom: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 50px;
-
 }
-
+    .card:hover .fixxo-btn-card-theme {
+        display: flex;
+    }
 
 /*------------------------------------------------------*/
 
