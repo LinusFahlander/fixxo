@@ -14,42 +14,81 @@
 </head>
 <body>
     
-    <header>
-        <nav class="navbar-menu container">
-            <div class="logotype">Fixxo.</div>
-            <div class="menu-links">
-                <a href="index.html">Home</a>
-                <a href="#">Categories</a>
-                <a href="#">Products</a>
-                <a class="active" href="contact.html">Contacts</a>
-            </div>
-            <div class="icon-links">
-                <a href="#">
-                    <i class="fa-regular fa-magnifying-glass"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-regular fa-code-compare"></i>
-                </a>
-                <a href="#">
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-theme">1</span>
-                    <i class="fa-regular fa-heart"></i>
-                </a>
-                <a href="#">
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-theme">3</span>
-                    <i class="fa-regular fa-bag-shopping"></i>
-                </a>
-            </div>
-        </nav>
-    </header>
+    <nav class="navbar-menu container">
+        <div class="logotype">Fixxo.</div>
+        <div class="menu-links">
+            <a href="index.html">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">Products</a>
+            <a class="active" href="contact.html">Contacts</a>
+        </div>
+        <div class="icon-links">
+            <a href="#">
+                <i class="fa-regular fa-magnifying-glass"></i>
+            </a>
+            <a href="#">
+                <i class="fa-regular fa-code-compare"></i>
+            </a>
+            <a href="#">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-theme">1</span>
+                <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="#">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-theme">3</span>
+                <i class="fa-regular fa-bag-shopping"></i>
+            </a>
+        </div>
+    </nav>
 
-    <section class="breadcrumb-list">
+    <section class="breadcrumb">
         <div class="container">
-            <ul>
+            <ul class="breadcrumb-list">
                 <li><a href="index.html">Home</a></li>
                 <li>Contacts</li>
             </ul>
         </div>
     </section>
 
+    <section class="map">
+        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1136.9807948550335!2d127.7834801096133!3d26.357868752192104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x12a9b8c4978a21be!2zMjbCsDIxJzI4LjQiTiAxMjfCsDQ3JzAxLjciRQ!5e1!3m2!1ssv!2sse!4v1665993699178!5m2!1ssv!2sse"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-form">
+        <div class="container">
+            <h2>Come in Contact with Us</h2>
+            <form novalidate>
+                <div>
+                    <input id="name" onkeyup="validate" type="text" placeholder="Your Name">
+                    <div id="nameErrorMessage" class="errorMessage"></div>
+                </div>
+                <div>
+                    <input id="email" type="email" placeholder="Your Mail">
+                    <div id="emailErrorMessage" class="errorMessage"></div>
+                </div>
+                <div class="textarea">
+                    <textarea id="comment" placeholder="Comments"></textarea>
+                    <div id="commentErrorMessage" class="errorMessage"></div>
+                </div>
+                <div>
+                    <button type="submit" class="btn-theme">
+                        <span class="corner-topLeft"></span>
+                        Post Comments
+                        <span class="corner-bottomRight"></span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="socialmedia-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div>© 2022 Fixxo. All Rights Reserved</div>
+    </footer>
 </body>
 </html>
